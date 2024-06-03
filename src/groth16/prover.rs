@@ -250,7 +250,10 @@ where
             .map(|s| s.into())
             .collect::<Vec<_>>(),
     );
-
+    
+    // Print the length of aux_assignment
+    println!("Length of aux_assignment: {}", aux_assignment.len());
+    
     let l = multiexp(
         &worker,
         params.get_l(aux_assignment.len())?,
